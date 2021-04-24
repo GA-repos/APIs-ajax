@@ -343,7 +343,7 @@ Here is the basic HTML code for a search bar and button
 
 And here is some of the JS we will need to make it all run
 ```
-let form = document.querySelector('#searchButton');
+let form = document.querySelector('#searchBar');
 
 
 function getData (event) {    
