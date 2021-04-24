@@ -333,9 +333,9 @@ the information we want.
 
 Here is the basic HTML code for a search bar and button
 ```
-<form id = "searchBar">
+<form id="searchBar">
     <input type="text" name="inputBar" value="" placeholder="Enter text here"  id="inputBar">
-    <input type="button" name = "submitButton" value="Click here" id="searchButton">
+    <input type="submit" name = "submitButton" value="Click here" id="searchButton">
 </form>
 
  
@@ -343,12 +343,12 @@ Here is the basic HTML code for a search bar and button
 
 And here is some of the JS we will need to make it all run
 ```
-let button = document.querySelector('#searchButton');
-let textInput = document.querySelector('#inputBar').value;
+let form = document.querySelector('#searchButton');
 
 
-async function getData (event) {    
+function getData (event) {    
      event.preventDefault()
+let textInput = document.querySelector('#inputBar').value;
 
  ///FETCH code
 
